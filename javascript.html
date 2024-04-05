@@ -3,54 +3,70 @@
     <head>
         <title> JavaScript</title>
 
+        <style type="text/css">
+
+        .circle {
+
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            float: left;
+            margin-right: 50px;
+
+        }
+
+        #redcircle{
+
+            background-color: red;
+
+       }
+
+
+       
+       #bluecircle{
+
+            background-color: blue;
+
+       }
+
+
+       
+       #yellowcircle{
+
+        background-color: yellow;
+    }
+
+
+    </style>
 
     </head>
 
 <body>
 
-    <p id="text">Hello world</p>
+    <div class="circle" id="redcircle"></div>
 
-    <button id="mybutton">Change text</button>
+    <div class="circle" id="bluecircle"></div>
 
-    <p id="secondparagraph">Javascript is...</p>
+    <div class="circle" id="yellowcircle"></div>
 
-    <button id="secondbutton">change text</button>
 
-    <p id="ghost"></p>
 
-    <button id="thirdbutton">click me</button>
+<script type="text/JavaScript">
 
-    <p id="moretext">this is more text</p>
+document.getElementById("redcircle").onclick = function() {
 
-    <button id="styletext">style text</button>
+    document.getElementById("redcircle").style.display = "none"
+}
 
-    <script type="text/JavaScript">
-          
-      document.getElementById("mybutton").onclick = function() {
+document.getElementById("bluecircle").onclick = function() {
 
-         document.getElementById("text").innerHTML = "Hello Sofia";  
-        
-        }        
-             
-      document.getElementById("secondbutton").onclick = function () {
-            
-            document.getElementById("secondparagraph").innerHTML = "I think " +
-    
-             document.getElementById("secondparagraph").innerHTML + "awesome";
-            
-        }
+    document.getElementById("bluecircle").style.display = "none"
+}
 
-        document.getElementById("thirdbutton").onclick = function () {
-            document.getElementById("ghost").innerHTML = "SURPRISE";
-            
-        }
+document.getElementById("yellowcircle").onclick = function() {
 
-    
-    document.getElementById("styletext").onclick = function() {
-
-        document.getElementById("moretext").style.display = "none";
-
-    }
+    document.getElementById("yellowcircle").style.display = "none"
+}
     </script>
 
 </body>
