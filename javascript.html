@@ -43,29 +43,24 @@
 
 <body>
 
-    <div class="circle" id="redcircle"></div>
+   <input type="text" id="textinput"> 
+   <button id="button">change the text</button> 
 
-    <div class="circle" id="bluecircle"></div>
-
-    <div class="circle" id="yellowcircle"></div>
-
-
+   <p id="text">This is some text</p>
 
 <script type="text/JavaScript">
 
-document.getElementById("redcircle").onclick = function() {
+document.getElementById("button").onclick = function() {
 
-    document.getElementById("redcircle").style.display = "none"
-}
+   
+    
+    var textEntered = "";
 
-document.getElementById("bluecircle").onclick = function() {
+    textEntered = document.getElementById("textinput").value;
 
-    document.getElementById("bluecircle").style.display = "none"
-}
+    document.getElementById("text").innerHTML =  textEntered;
 
-document.getElementById("yellowcircle").onclick = function() {
-
-    document.getElementById("yellowcircle").style.display = "none"
+    
 }
     </script>
 
