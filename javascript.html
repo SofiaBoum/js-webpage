@@ -3,63 +3,38 @@
     <head>
         <title> JavaScript</title>
 
-        <style type="text/css">
-
-        .circle {
-
-            width: 80px;
-            height: 80px;
-            border-radius: 50%;
-            float: left;
-            margin-right: 50px;
-
-        }
-
-        #redcircle{
-
-            background-color: red;
-
-       }
-
-
-       
-       #bluecircle{
-
-            background-color: blue;
-
-       }
-
-
-       
-       #yellowcircle{
-
-        background-color: yellow;
-    }
-
-
-    </style>
+        
 
     </head>
 
 <body>
 
-   <input type="text" id="textinput"> 
-   <button id="button">change the text</button> 
+   <p>What is the magic word?</p>
+   <input type="text" id="magicword">
+   <button id="submit">Submit</button>
 
-   <p id="text">This is some text</p>
+
+</body>   
 
 <script type="text/JavaScript">
 
-document.getElementById("button").onclick = function() {
+document.getElementById("submit").onclick = function () {
 
-   
-    var temp = document.getElementById("text").innerHTML;
+var a = document.getElementById("magicword").value; 
 
-    document.getElementById("text").innerHTML = document.getElementById("textinput").value;
+var magic = "Vily"
 
-    document.getElementById("textinput").value = temp;
+    if (a == magic) {
 
-    
+        alert ("You're right!");
+        
+    }
+
+    else {
+
+        alert("Try again");
+    }
+
 }
     </script>
 
