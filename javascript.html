@@ -53,12 +53,11 @@
 document.getElementById("button").onclick = function() {
 
    
-    
-    var textEntered = "";
+    var temp = document.getElementById("text").innerHTML;
 
-    textEntered = document.getElementById("textinput").value;
+    document.getElementById("text").innerHTML = document.getElementById("textinput").value;
 
-    document.getElementById("text").innerHTML =  textEntered;
+    document.getElementById("textinput").value = temp;
 
     
 }
