@@ -9,33 +9,45 @@
 
 <body>
 
-   <p>What is the magic word?</p>
-   <input type="text" id="magicword">
-   <button id="submit">Submit</button>
+<p>how many fingers?</p>
+
+<p><input type="text" id="guess"> <button id="guessnumber">Guess!</p>
+
+
+
 
 
 </body>   
 
 <script type="text/JavaScript">
 
-document.getElementById("submit").onclick = function () {
 
-var a = document.getElementById("magicword").value; 
+document.getElementById("guessnumber").onclick = function () {
 
-var magic = "Vily"
+    var number = Math.random();
 
-    if (a == magic) {
+    number = number * 6;
 
-        alert ("You're right!");
-        
-    }
+    number = Math.floor(number);
+    
+    if (document.getElementById("guess").value; == number); {
+
+    alert("yes"); }
+
+
 
     else {
 
-        alert("Try again");
+        alert("nope" + number);
     }
-
+    
+    
 }
+
+
+
+
+
     </script>
 
 </body>
